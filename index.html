@@ -1,0 +1,598 @@
+<!-- 
+This site is heavily inspired by Anil Seervi's DevFolio template (https://github.com/AnilSeervi/DevFolio)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+        <!-- Title: add your Portfolio websites's title here -->
+        <title>Chan Zhe Xiang | Developer Portfolio</title>
+
+        <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+        <meta
+            name="keywords"
+            content="Chan Zhe Xiang, czhexg, javascript, python, node, backend, developer, software, database, db, sql, nosql, mysql, mongodb"
+        />
+
+        <!-- Improve your SEO by adding a small descrption of you -->
+        <meta
+            name="description"
+            content="Chan Zhe Xiang | Developer Portfolio"
+        />
+
+        <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+        <link rel="icon" type="image/png" href="" />
+
+        <!-- Add your primary-theme color for the value of content -->
+        <meta name="theme-color" content="#36d1dc" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- Fill content with the URL of this portfolio you'll host -->
+        <meta property="og:url" content="" />
+        <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+        <meta
+            property="og:title"
+            content="Chan Zhe Xiang | Developer Portfolio"
+        />
+        <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+        <meta
+            property="og:description"
+            content="Chan Zhe Xiang | Developer Portfolio"
+        />
+        <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+        <meta property="og:image" content="" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="" />
+        <!-- Again fill content attr with the URL of this portfolio you'll host -->
+        <meta property="twitter:url" content="" />
+        <!-- Recommended to use the same text used within <title> element -->
+        <meta
+            property="twitter:title"
+            content="Chan Zhe Xiang | Developer Portfolio"
+        />
+        <!-- short description that shows up while your portfolio is shared -->
+        <meta
+            property="twitter:description"
+            content="Chan Zhe Xiang | Developer Portfolio"
+        />
+        <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+        <meta property="twitter:image" content="" />
+
+        <!-- link tags -->
+        <link rel="preload" as="style" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+
+        <!-- FontAwesome Icons link -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script defer src="./javascript/scrollreveal.min.js"></script>
+        <script
+            defer
+            type="text/javascript"
+            src="./javascript/scrollveal.js"
+        ></script>
+    </head>
+    <body>
+        <!-- Hero Section -->
+        <div id="hero">
+            <section class="container">
+                <h1 class="hero-title">
+                    Hi, my name is
+                    <span class="text-color-main name">Chan Zhe Xiang</span>
+                    <br />
+                    I'm <span class="typing" style="color: #6f42c1"></span>
+                </h1>
+                <p class="hero-cta">
+                    <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+                </p>
+            </section>
+            <!-- <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+                <div class="scroll-down"></div
+            ></a> -->
+        </div>
+        <!-- /END Hero Section -->
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="row about-wrapper">
+                    <div class="about-wrapper__image">
+                        <img
+                            class="img-fluid"
+                            src="./assets/profile_img.jpg"
+                            alt="Profile Image"
+                            width="450"
+                            height="350"
+                        />
+                    </div>
+                    <div class="about-wrapper__info">
+                        <p class="about-wrapper__info-text">
+                            Hello, I'm Zhe Xiang, an Information Systems student
+                            in my final year, specializing in backend
+                            development. I'm passionate about software and web
+                            development, and I'm always eager to learn new
+                            technologies and improve my skills.
+                        </p>
+                        <p class="about-wrapper__info-text">
+                            I'm proficient in Node.js, JavaScript, and Python,
+                            and my goal is to become a Backend Software
+                            Engineer. To diversify my skill set, I've also
+                            explored frontend development with React.
+                        </p>
+                        <p class="about-wrapper__info-text">
+                            I'm currently looking for a full-time job
+                            opportunity to kickstart my career in software
+                            development.
+                        </p>
+                        <span class="about-wrapper__cta">
+                            <a
+                                href="https://drive.google.com/file/d/1BaW3eUHAe2L-UNOcq8RxAWZcwDorkL_l/view?usp=drive_link"
+                                target="_blank"
+                                class="cta-btn cta-btn--resume"
+                                >View Resume</a
+                            >
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /END About Section -->
+
+        <!--Projects Section-->
+        <section id="projects">
+            <div class="container">
+                <div class="project-wrapper">
+                    <h2 class="section-title dark-blue-text">Projects</h2>
+
+                    <!-- Each .row is a project -->
+                    <article class="row">
+                        <div class="project-wrapper__text">
+                            <h3 class="project-wrapper__text-title">
+                                Chat App
+                            </h3>
+                            <p class="project-wrapper__text-info">
+                                Built a real-time chat application using MERN
+                                (MongoDB, Express, React, Node.js) stack. Users
+                                can create chat rooms and send messages to each
+                                other.
+                            </p>
+                            <p class="project-wrapper__text-info">
+                                Socket.IO was used to establish WebSocket
+                                connection, and Chakra UI was used for creating
+                                the UI.
+                            </p>
+                            <p class="project-wrapper__text-info">
+                                Implemented authentication using Bcrypt and JWT
+                                tokens.
+                            </p>
+                            <p class="project-wrapper__text-info">
+                                Hosted the web-application on Render.
+                            </p>
+                            <div class="project-wrapper__text-btns">
+                                <a
+                                    href="https://chat-app-b4at.onrender.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="cta-btn cta-btn--hero cta-btn--projects"
+                                    >See Live</a
+                                >
+                                <a
+                                    href="https://github.com/czhexg/Chat-App"
+                                    target="_blank"
+                                    class="cta-btn text-color-main"
+                                    >Source Code</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="project-wrapper__image">
+                            <a
+                                href="https://github.com/czhexg/Chat-App"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="thumbnail rounded">
+                                    <img
+                                        src="./assets/chat_app_img.png"
+                                        class="img-fluid"
+                                        alt="Project Image"
+                                        width="1366"
+                                        height="767"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- /END Project -->
+
+                    <!-- Each .row is a project -->
+                    <article class="row">
+                        <div class="project-wrapper__text">
+                            <h3 class="project-wrapper__text-title">
+                                SMUth Ride
+                            </h3>
+                            <p class="project-wrapper__text-info">
+                                Developed a carpooling web-application for SMU
+                                students to share rides to and from school.
+                                Users can also offer rides to other students.
+                            </p>
+                            <p class="project-wrapper__text-info">
+                                Built using Vue.js and a Firebase database.
+                            </p>
+                            <p class="project-wrapper__text-info">
+                                Users create and join carpooling groups based on
+                                their location. A chat function is also
+                                available for users to communicate.
+                            </p>
+                            <div class="project-wrapper__text-btns">
+                                <a
+                                    href="https://bernicesmu.github.io/SMUthRide/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="cta-btn cta-btn--hero cta-btn--projects"
+                                    >See Live</a
+                                >
+                                <a
+                                    href="https://github.com/czhexg/SMUth-Ride"
+                                    target="_blank"
+                                    class="cta-btn text-color-main"
+                                    >Source Code</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="project-wrapper__image">
+                            <a
+                                href="https://github.com/czhexg/SMUth-Ride"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="thumbnail rounded">
+                                    <img
+                                        src="./assets/smuth_ride_img.png"
+                                        class="img-fluid"
+                                        alt="Project Image"
+                                        width="1366"
+                                        height="767"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- /END Project -->
+                </div>
+            </div>
+        </section>
+        <!-- End Projects Section -->
+
+        <div class="section-separator-wrapper">
+            <hr />
+        </div>
+
+        <!--Experience Section-->
+        <section id="experience">
+            <div class="container">
+                <div class="experience-wrapper">
+                    <h2 class="section-title dark-blue-text">Experience</h2>
+
+                    <!-- Each .row is an experience -->
+                    <article class="row">
+                        <div class="experience-wrapper__text">
+                            <h3 class="experience-wrapper__text-title">
+                                Hiverlab | Backend Engineer Intern
+                            </h3>
+                            <h4 class="experience-wrapper__text-date">
+                                Aug 2023 - Nov 2023 · 4 mos
+                            </h4>
+                            <p class="experience-wrapper__text-info">
+                                - Transformed existing APIs from action-based to
+                                resource-based REST architecture using
+                                Express.js
+                            </p>
+                            <p class="experience-wrapper__text-info">
+                                - Developed a Python script for seamless data
+                                migration between databases, improving data
+                                efficiency and accessibility.
+                            </p>
+                            <p class="experience-wrapper__text-info">
+                                - Improved a data handler's capabilities for
+                                receiving and storing data from MQTT into a
+                                database.
+                            </p>
+                            <p class="experience-wrapper__text-info">
+                                - Designed and implemented new APIs for data
+                                retrieval and data management within the
+                                database.
+                            </p>
+                            <p class="experience-wrapper__text-info">
+                                - Conducted research and facilitated a workshop
+                                on employing Jest for API testing, contributing
+                                to enhanced code quality and reliability.
+                            </p>
+                        </div>
+
+                        <div class="experience-wrapper__image">
+                            <div class="thumbnail rounded">
+                                <img
+                                    src="./assets/hiverlab_img.png"
+                                    class="img-fluid"
+                                    alt="Experience Image"
+                                    width="1366"
+                                    height="767"
+                                />
+                            </div>
+                        </div>
+                    </article>
+                    <!-- /END Experience -->
+
+                    <!-- Each .row is an experience -->
+                    <article class="row">
+                        <div class="experience-wrapper__text">
+                            <h3 class="experience-wrapper__text-title">
+                                ST Engineering | Software Developer Intern
+                            </h3>
+                            <h4 class="experience-wrapper__text-date">
+                                May 2023 - Aug 2023 · 4 mos
+                            </h4>
+                            <p class="experience-wrapper__text-info">
+                                - Upgraded and refactored legacy Python 2 code
+                                into Python 3 as part of a tech refresh,
+                                improving compatibility and performance.
+                            </p>
+                            <p class="experience-wrapper__text-info">
+                                - Developed an ASP.NET WebForms prototype for
+                                retrieving Microsoft Word documents from the
+                                MSSQL database, utilizing CKEditor for a
+                                user-friendly editing interface.
+                            </p>
+                            <p class="experience-wrapper__text-info">
+                                - Upgraded APIs from LoopBack 2 to LoopBack 4,
+                                leveraging Elasticsearch for advanced search and
+                                analytics capabilities. Added new endpoints to
+                                enhance functionality and testing.
+                            </p>
+                            <p class="experience-wrapper__text-info">
+                                - Created a custom API health checker with
+                                automated restart capabilities, utilizing a BAT
+                                file, and integrated efficient issue tracking
+                                using Winston logging.
+                            </p>
+                        </div>
+
+                        <div class="experience-wrapper__image">
+                            <div class="thumbnail rounded">
+                                <img
+                                    src="./assets/st_engineering_img.jpg"
+                                    class="img-fluid"
+                                    alt="Experience Image"
+                                    width="1366"
+                                    height="767"
+                                />
+                            </div>
+                        </div>
+                    </article>
+                    <!-- /END Experience -->
+                </div>
+            </div>
+        </section>
+        <!-- End Experience Section -->
+
+        <div class="section-separator-wrapper">
+            <hr />
+        </div>
+
+        <!--Skills Section-->
+        <section id="skills">
+            <div class="container">
+                <div class="skills-wrapper">
+                    <h2 class="section-title dark-blue-text">Skills</h2>
+
+                    <div class="skills-wrapper__text">
+                        <h3 class="skills-wrapper__text-title">
+                            Programming Languages
+                        </h3>
+                        <img
+                            src="./assets/javascript.svg"
+                            alt="javascript logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/typescript.svg"
+                            alt="typescript logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/python.svg"
+                            alt="python logo"
+                            height="65"
+                            width="200"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/java.svg"
+                            alt="java logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                    </div>
+                    <div class="skills-wrapper__text">
+                        <h3 class="skills-wrapper__text-title">
+                            Backend Development
+                        </h3>
+                        <img
+                            src="./assets/expressjs.svg"
+                            alt="expressjs logo"
+                            height="75"
+                            width="150"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/flask.svg"
+                            alt="flask logo"
+                            height="75"
+                            width="150"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/nodejs.svg"
+                            alt="nodejs logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                    </div>
+                    <div class="skills-wrapper__text">
+                        <h3 class="skills-wrapper__text-title">
+                            Frontend Development
+                        </h3>
+                        <img
+                            src="./assets/html5.svg"
+                            alt="html5 logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/css3.svg"
+                            alt="css3 logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/react.svg"
+                            alt="react logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/mui.svg"
+                            alt="material ui logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                    </div>
+                    <div class="skills-wrapper__text">
+                        <h3 class="skills-wrapper__text-title">
+                            Database Management
+                        </h3>
+                        <img
+                            src="./assets/mysql.svg"
+                            alt="mysql logo"
+                            height="90"
+                            width="180"
+                            class="skills-wrapper__logo"
+                        />
+                        <img
+                            src="./assets/mongodb.svg"
+                            alt="mongodb logo"
+                            height="90"
+                            width="180"
+                            class="skills-wrapper__logo"
+                        />
+                    </div>
+                    <div class="skills-wrapper__text">
+                        <h3 class="skills-wrapper__text-title">
+                            Version Control
+                        </h3>
+                        <img
+                            src="./assets/git.svg"
+                            alt="git logo"
+                            height="90"
+                            width="100"
+                            class="skills-wrapper__logo"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-wrapper">
+                    <p class="contact-wrapper__text">
+                        Would you like to work with me? Awesome!
+                    </p>
+                    <a
+                        href="https://www.linkedin.com/in/zhe-xiang-chan/"
+                        class="cta-btn cta-btn--resume"
+                        >Let's Talk</a
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- END Contact Section -->
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <a href="#hero" class="back-to-top" aria-label="go back to top">
+                    <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+                </a>
+                <div class="social-links">
+                    <a
+                        href="https://www.linkedin.com/in/zhe-xiang-chan/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="linkedin"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a
+                        href="https://github.com/czhexg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="github"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <hr />
+                <p class="footer__text">
+                    &copy; Copyright <span id="year"></span>
+                </p>
+            </div>
+        </footer>
+        <!-- END Footer Section -->
+
+        <script>
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
+        <script src="javascript/typed.js/typed.min.js"></script>
+        <script type="text/javascript">
+            var typed = new Typed(".typing", {
+                strings: ["a Programmer", "a Developer", "a Student"],
+                loop: true,
+                typeSpeed: 65,
+                backSpeed: 65,
+                backDelay: 1000,
+            });
+        </script>
+        <script src="./javascript/vanilla-tilt.min.js"></script>
+        <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    </body>
+</html>
