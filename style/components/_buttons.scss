@@ -136,6 +136,10 @@
   }
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 // /* Arrow Button */
 // .fa-angle-up {
 //   color: #272727;

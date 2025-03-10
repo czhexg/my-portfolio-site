@@ -40,3 +40,15 @@ a:hover {
     box-shadow: none;
   }
 }
+
+.text-color-disabled {
+  margin-left: 1rem;
+  @include supportDisabledColorForIE11();
+
+  @include respond(phone) {
+    margin: 0;
+    background-image: none;
+    -webkit-text-fill-color: $disabled-color;
+    box-shadow: none;
+  }
+}
